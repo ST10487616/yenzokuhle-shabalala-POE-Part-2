@@ -1,161 +1,30 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>MASHAYA'S AUTOSHOP</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #0a0000;
-}
-
-/* Header */
-header {
-    background-color: #363636;
-    color: #f10101;
-    padding: 0px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-header nav ul {
-    list-style-type:;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-header nav ul li {
-    margin: 0 20px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #ff0011;
-    font-weight: bold;
-    transition: color 0.2s ease-in-out;
-}
-
-header nav ul li a:hover {
-    color: #070707;
-}
-
-/* Hero Section */
-.hero {
-    background: linear-gradient(to right, #111, #333);
-    color: #fff;
-    text-align: center;
-    padding: 80px 20px;
-    margin-top: 60px;
-}
-
-.shop-now {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #ff0000;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: hsl(from color h s l);
-    font-weight: bold;
-    transition: transform 0.2s ease, background-color 0.3s ease;
-}
-
-.shop-now:hover {
-    background-color: #f9090d;
-    transform: scale(1.1);
-}
-
-/* Product Grid */
-.products {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    justify-items: center;
-}
-
-.product-card {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 30px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease-in-out;
-}
-
-.product-card:hover {
-    transform: scale(1.05);
-}
-
-.product-card img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-/* Footer */
-footer {
-    background-color: #222;
-    color: #fc0707;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-footer a {
-    color: #ff8800;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: #ffd700;
-}
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    background-color: #222;
-    color: #fc0707;
-}
-
-form {
-    text-align: left;
-    width: 300px; /* Adjust the width as needed */
-    margin: 0 auto 20px 0; /* Aligns left while keeping space */
-}
-
-form label, form input, form textarea, form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-button {
-    background-color: #ff0011;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #d60000;
-}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+<meta name="title" content="Mashaya's Autoshop | Premium Car Parts in South Africa">
+<meta name="description" content="Shop high-quality auto parts you won't find just anywhere — from brake pads to headlights. Fast shipping across South Africa.">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.mashayasautoshop.co.za/">
+<meta property="og:title" content="Mashaya's Autoshop | Premium Car Parts">
+<meta property="og:description" content="Explore Mashaya's exclusive collection of car parts. Reliable, affordable, and fast delivery.">
+<meta property="og:image" content="images/og-image.jpg"> 
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Mashaya's Autoshop | Premium Car Parts">
+<meta property="twitter:description" content="Shop high-quality car components at Mashaya's Autoshop. Trusted in SA.">
+<meta property="twitter:image" content="images/twitter-preview.jpg">
+
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 <body>
     <header>
         <h1>MASHAYA'S AUTOSHOP</h1>
@@ -164,7 +33,9 @@ button:hover {
                 <li><a href="homepage.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+            
+            
+
             </ul>
         </nav>
     </header>
@@ -206,7 +77,7 @@ button:hover {
             <div class="product-card">
                 <img src="526b51e8-85ea-4005-88ca-6fbfbb446826.jpg" alt="Tires">
                 <p><strong>Tires</strong></p>
-                <p>Price: R1,500 per tire</p>
+                <p>Price: R3,500 per tire</p>
             </div>
             <div class="product-card">
                 <img src="DENSO is known for the unsurpassed quality of its….jpg" alt="Radiators">
@@ -230,24 +101,16 @@ button:hover {
             </div>
         </div>
     </section>
-    <footer id="contact">
-        <form action="contact_form_handler.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-        
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-        
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea><br>
-        
-            <button type="submit">Send</button>
-        </form>
+    <footer>
+
+<p id="error-message" style="color: red;"></p>
         <p>&#169; 2025 MASHAYA'S AUTOSHOP</p>
         <p>Follow us on Instagram: <a href="https://instagram.com/mashaya_yn" target="_blank">@mashaya_yn</a></p>
         <p>Contact Us:</p>
         <p>📞 Phone: +27 76 706 0214</p>
         <p>📧 Email: @nduduzoyenzokuhle@gmail.com</p>
+    
     </footer>
+   
 </body>
 </html>
